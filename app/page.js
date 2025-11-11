@@ -67,7 +67,7 @@ export default function Home() {
               className="profile-pic"
             />
             <h1>Mishal Saheersha</h1>
-            <p className="subtitle">Junior Full Stack Developer</p>
+            <p className="subtitle">Full Stack Developer</p>
             <p className="intro">
               <a href="mailto:mishalsaheersha10@gmail.com">
                 Hey There 😊! <br /> Follow me on:
@@ -144,71 +144,115 @@ export default function Home() {
       </section>
 
       {/* ================= SKILLS ================= */}
-      <section id="Skills" className="skills-section my-box">
-        <h2>My Skills</h2>
-        <div className="skill-icon">
-          <img src="/ht.png" alt="HTML" />
-          <img src="/css.png" alt="CSS" />
-          <img src="/js.png" alt="JavaScript" />
-          <img src="/rct.png" alt="React" />
-        </div>
-      </section>
+<section id="Skills" className="skills-section my-box">
+  <h2 style={{ textAlign: "center" }}>My Skills</h2>
+  <div className="skill-icon">
+    <img src="/ht.png" alt="HTML" />
+    <img src="/css.png" alt="CSS" />
+    <img src="/js.png" alt="JavaScript" />
+    <img src="/rct.png" alt="React" />
+    <img src="/bootstrap-original-wordmark.png" alt="Bootstrap" />
+    <img src="/nextjs-original.png" alt="Next.js" />
+    <img src="/nodejs-icon.png" alt="Node.js" />
+    <img src="/go-lang-dark.png" alt="GoLang" />
+  </div>
+</section>
+
 
       {/* ================= PROJECTS ================= */}
-      <section id="Projects">
-        <h2>My Projects</h2>
-        <div className="projects-grid">
-          <img src="/proejct2.jpg" alt="Project 2" />
-          <img src="/proejct3.jpg" alt="Project 3" />
-          <img src="/proejct4.jpg" alt="Project 4" />
-          <img src="/project5.png" alt="Project 5" />
-        </div>
-      </section>
+<section id="Projects" className="projects-section">
+  <h2 className="section-heading">My Projects</h2>
+
+  <div className="projects-grid">
+    {/* 🧠 Spotidados */}
+    <a
+      href="https://github.com/MickSabogal/spotidados.git"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-card"
+    >
+      <img src="/logo.png" alt="Spotidados" className="project-logo" />
+      <p className="project-title">Spotidados 🎧</p>
+    </a>
+
+    {/* 🧩 DevRats */}
+    <a
+      href="https://github.com/MickSabogal/devrats.git"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-card"
+    >
+      <img src="/logo_devrats.png" alt="DevRats" className="project-logo" />
+      <p className="project-title">DevRats 🖥️</p>
+    </a>
+
+    {/* 🎨 Reart */}
+    <a
+      href="https://github.com/gabebruu/reartfinal.git"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-card"
+    >
+      <img src="/logoreart.png" alt="Reart" className="project-logo" />
+      <p className="project-title">Reart 🎨</p>
+    </a>
+
+    {/* ❄️ NetFreeze */}
+    <a
+      href="https://github.com/msaheers/react_app1.git"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-card"
+    >
+      <img src="/netfreeze.png" alt="NetFreeze" className="project-logo" />
+      <p className="project-title">NetFreeze ❄️</p>
+    </a>
+
+    {/* ⚙️ Name Generator */}
+    <a
+      href="https://github.com/msaheers/namegenerator"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-card"
+    >
+      <img src="/namegenerator.png" alt="Name Generator" className="project-logo" />
+      <p className="project-title">Name Generator ⚙️</p>
+    </a>
+  </div>
+</section>
+
 
       {/* ================= CONTACT SECTION ================= */}
-      <section className="my-box">
-        <div>
-          <h2>Let’s Build Something Awesome Together 💡</h2>
-          <p>
-            Have a business idea, startup concept, or personal brand that
-            deserves a stunning digital presence?  
-            I help you turn that vision into a clean, responsive, and powerful
-            website that actually converts.
-          </p>
+<section className="my-box">
+  <div className="contact-wrapper-final">
+    <div className="contact-content">
+      <h2>Let’s Build Something Awesome Together 💡</h2>
+      <p>
+        Have a business idea, startup concept, or personal brand that deserves a stunning digital presence?  
+        I help you turn that vision into a clean, responsive, and powerful website that actually converts.
+      </p>
 
-          <p>
-            Whether you need a portfolio that shines, a landing page that sells,
-            or a full-stack web app, 
-            I’ll bring your ideas to life with precision, design, and
-            performance.
-          </p>
+      <p>
+        Whether you need a portfolio that shines, a landing page that sells,
+        or a full-stack web app, I’ll bring your ideas to life with precision,
+        design, and performance.
+      </p>
 
-          <div style={{ textAlign: "center", marginTop: "2rem" }}>
-            <h3 style={{ marginBottom: "1rem", color: "#00ffc8" }}>
-              Ready to make your project real?
-            </h3>
+      <h3 style={{ color: "#00ffc8", marginTop: "1.2rem" }}>
+        Ready to make your project real?
+      </h3>
+    </div>
 
-            {/* QR Code Image */}
-            <img
-              src="/qrcode.png"
-              alt="Scan to connect with Mishal Saheersha"
-              style={{
-                width: "160px",
-                height: "160px",
-                borderRadius: "10px",
-                boxShadow: "0 0 25px #00fff0",
-                transition: "transform 0.3s ease",
-                marginBottom: "1.5rem",
-              }}
-              onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
-              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-            />
-
-            <ContactModal />
-          </div>
-        </div>
-      </section>
-
+    <div className="contact-flexbox">
+      <img
+        src="/qrcode.png"
+        alt="Scan to connect with Mishal Saheersha"
+        className="contact-qr-small"
+      />
+      <ContactModal />
+    </div>
+  </div>
+</section>
       {/* ================= FOOTER ================= */}
       <footer className="site-footer">
         <nav className="footer-nav">
