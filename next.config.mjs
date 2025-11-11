@@ -1,12 +1,13 @@
-/** @type {import('next').NextConfig} */
+//** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    // ⛔ Ignore ESLint errors during Vercel build
+    // Ignore ESLint errors during build (for Vercel)
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true, // (Optional) if you’re using normal <img> instead of <Image />
+    unoptimized: true, // since we use normal <img>
   },
+  reactStrictMode: true,
 };
 
 export default nextConfig;
