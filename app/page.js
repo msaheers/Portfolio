@@ -165,7 +165,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= WIIFM CONTACT SECTION ================= */}
+      {/* ================= CONTACT SECTION ================= */}
       <section className="my-box">
         <div>
           <h2>Let’s Build Something Awesome Together 💡</h2>
@@ -187,6 +187,23 @@ export default function Home() {
             <h3 style={{ marginBottom: "1rem", color: "#00ffc8" }}>
               Ready to make your project real?
             </h3>
+
+            {/* QR Code Image */}
+            <img
+              src="/qrcode.png"
+              alt="Scan to connect with Mishal Saheersha"
+              style={{
+                width: "160px",
+                height: "160px",
+                borderRadius: "10px",
+                boxShadow: "0 0 25px #00fff0",
+                transition: "transform 0.3s ease",
+                marginBottom: "1.5rem",
+              }}
+              onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+            />
+
             <ContactModal />
           </div>
         </div>

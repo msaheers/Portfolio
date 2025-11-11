@@ -323,3 +323,22 @@ button:hover,
     justify-content: center;
   }
 }
+
+
+/* ===================
+   QR CODE 
+=================== */
+
+img[alt*="Scan to connect"] {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px #00ffc8;
+  }
+  to {
+    box-shadow: 0 0 35px #00e0ff;
+  }
+}
+
